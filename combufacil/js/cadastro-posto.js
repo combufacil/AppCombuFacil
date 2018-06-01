@@ -1,12 +1,12 @@
 jQuery( document ).ready(function() {
 	// Handler for .ready() called.
 
-	jQuery( "#btnCadastrarusuario" ).click(function() {
+	jQuery( "#btnCadastrarposto" ).click(function() {
 
 		//jQuery.support.cors = true;
-		var nome= jQuery('#nome').val();
-		var nascimento = jQuery('#nacimento').val();
-		var cpf = jQuery('#cpf').val();
+		var razao_social= jQuery('#razao_social').val();
+		var nome_fantasia = jQuery('#nome_fantasia').val();
+		var cnpj = jQuery('#cnpj').val();
 		var endereco = jQuery('#endereco').val();
 		var num = jQuery('#num').val();
 		var cep = jQuery('#cep').val();
@@ -17,14 +17,14 @@ jQuery( document ).ready(function() {
 		var celular = jQuery('#celular').val();
 		var email = jQuery('#email').val();
 		var senha = jQuery('#senha').val();
-		var confirmar_senha = jQuery('#confirmar_senha').val();
+		var confirma_senha = jQuery('#confirma_senha').val();
 
 		jQuery.ajax({
 			type : "GET",
 			data :
-			"nome="+nome+
-			"&nascimento="+nascimento+
-			"&cpf="+cpf+
+			"razao_social="+razao_social+
+			"&nome_fantasia="+nome_fantasia+
+			"&cnpj="+cnpj+
 			"&endereco="+endereco+
 			"&num="+num+
 			"&cep="+cep+
@@ -35,8 +35,8 @@ jQuery( document ).ready(function() {
 			"&celular="+celular+
 			"&email="+email+
 			"&senha="+senha+
-			"&confirmar_senha="+confirmar_senha,
-			url : "./js/cadastro-usuario.php",
+			"&confirma_senha="+confirma_senha,
+			url : "./js/cadastro-posto.php",
 			success : function(resposta){
 				alert("Cadastro efetuado");
 			},

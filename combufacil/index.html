@@ -13,21 +13,25 @@
 				<div class="statusbar-overlay"></div>
 				<!-- Panels overlay-->
 				<div class="panel-overlay"></div>
-				<h1>WalkCut</h1>
+				<h1>CombuFacil</h1>
 			</div>			
 			<div data-role="main" class="ui-content" >
-				<img class="imglogo" align="center-right" width="100px" height="99px" src="_imagens/Logo.png"/>  
-				<br>  
+				<img class="imglogo" align="center-right" src="_imagens/logo.png"/>  
+				<h2><center>Login</center></h2>
+				<hr>
+				<br>
 				<div data-role="form" class="form" >
 					<form>
-						<Label for="clogin"> <b> Login:</b><br>
-						<input type="text" name="firstname" placeholder="Digite seu login" name="login" id="clogin" required>
+						<Label for="clogin"> <b> Digite seu Email:</b><br>
+						<input type="text" name="firstname" name="login" id="clogin" required>
 						<br>
-						<Label for="cpsw"> <b> Senha:</b><br>
-						<input type="password" name="lastname" placeholder="Digite sua senha" name="psw" id="cpsw" required>
+						<Label for="cpsw"> <b>Digite sua Senha:</b><br>
+						<input type="password" name="lastname" name="psw" id="cpsw" required>
 						<br>		
 						<input type="submit" value="Entrar" id="ientrar">
-						<input type="button"  value="Não sou cadastrado" onclick="window.location='2.html'" id="nsc">		
+						<input type="button"  value="Cadastro de Cliente" onclick="window.location='CadastroCliente.html'" id="nsc">
+						<input type="button"  value="Cadastro de Posto" onclick="window.location='CadastroPosto.html'" id="nsc">
+						<input type="button"  value="Cadastro de Combustivel" onclick="window.location='CadastroCombustivel.html'" id="nsc">		
 					</form> 
 					<label>
 						<input type="checkbox" checked="checked" name="remember" style="margin-bottom:10px"> Lembrar-me
@@ -35,8 +39,8 @@
 				</div>
 			</div>					
 			<div data-role="footer" class="footer" data-theme="a" data-position="fixed">
-				<h1>WalkCut</h1>
+				<h1>CombuFacil</h1>
 			</div>   
-		</div>	<!--PAGE-->
+		</div>
 	</body>
 </html>

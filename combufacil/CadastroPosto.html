@@ -3,7 +3,7 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf8">
 		<script src="js/jquery-2.2.4.min.js"></script>
-		<script src="js/cadastro-user.js"></script>	
+		<script src="js/cadastro-posto.js"></script>	
 		<script src="js/jquerymobile/jquery.mobile-1.4.5.min.js"></script>
 		<link rel="stylesheet" href="js/jquerymobile/jquery.mobile-1.4.5.min.css">
 		<link rel="stylesheet" href="_css/style.css">
@@ -33,53 +33,53 @@
 
 				<form class="modal-content" onSubmit="return false;" method="GET">
 					<div class="container">
-						<h2><center>Cadastro de Cliente</center></h2>
+						<h2><center>Cadastro de Posto</center></h2>
 
 						<hr>
-						<label for="nomecli"><b>Nome:</b></label>
-						<input type="text" placeholder="Digite seu nome" id="nome" name="nome" required>
+						<label for="razao_social"><b>Razão Social:</b></label>
+						<input type="text" id="razao_social" name="razao_social" required>
 
-						<label for="date"><b>Data de nascimento:</b></label>
-						<input type="date" name="nacimento" id="nacimento" value="">
+						<label for="nome_fantasia"><b>Nome Fantasia:</b></label>
+						<input type="text" name="nome_fantasia" id="nome_fantasia">
 						
-						<label for="date"><b>CPF:</b></label>
-						<input type="text" name="cpf" id="cpf" value="">
+						<label for="cnpj"><b>CNPJ:</b></label>
+						<input type="text" name="cnpj" id="cnpj">
 
-						<label for="date"><b>Endereço:</b></label>
-						<input type="text" name="endereco" id="endereco" value="">
+						<label for="endereco"><b>Endereço:</b></label>
+						<input type="text" name="endereco" id="endereco">
 
-						<label for="date"><b>Número:</b></label>
-						<input type="text" name="num" id="num" value="">
+						<label for="num"><b>Número:</b></label>
+						<input type="text" name="num" id="num">
 
-						<label for="date"><b>CEP:</b></label>
-						<input type="text" name="cep" id="cep" value="">
+						<label for="cep"><b>CEP:</b></label>
+						<input type="text" name="cep" id="cep">
 
-						<label for="date"><b>Bairro:</b></label>
-						<input type="text" name="bairro" id="bairro" value="">
+						<label for="bairro"><b>Bairro:</b></label>
+						<input type="text" name="bairro" id="bairro">
 
-						<label for="date"><b>Cidade:</b></label>
-						<input type="text" name="cidade" id="cidade" value="">
+						<label for="cidade"><b>Cidade:</b></label>
+						<input type="text" name="cidade" id="cidade">
 						
-						<label for="date"><b>Estado:</b></label>
-						<input type="text" name="uf" id="uf" value="">
+						<label for="uf"><b>Estado:</b></label>
+						<input type="text" name="uf" id="uf">
 
 						<label for="telefone"><b>Telefone:</b></label>
-						<input type="text" name="telefone" id="telefone" value="">
+						<input type="text" name="telefone" id="telefone">
 
 						<label for="celular"><b>Celular:</b></label>
-						<input type="text" name="celular" id="celular" value="">
+						<input type="text" name="celular" id="celular">
 
-						<label for="emailcli"><b>Email:</b></label>
+						<label for="email"><b>Email:</b></label>
 						<input type="text" placeholder="Digite seu email" id="email" name="email" required>
 
-						<label for="pswcli"><b>Senha:</b></label>
+						<label for="psw"><b>Senha:</b></label>
 						<input type="password" placeholder="Digite sua senha" id="senha" name="senha" required>
 
-						<label for="pswcli"><b>Confirmar Senha:</b></label>
-						<input type="password" placeholder="Digite sua senha" id="confirmar_senha" name="confirmar_senha" required>
+						<label for="psw"><b>Confirmar Senha:</b></label>
+						<input type="password" placeholder="Digite sua senha" id="confirma_senha" name="confirma_senha" required>
 
 						<div class="clearfix">
-						<button type="submit" class="signupbtn" id="btnCadastrarusuario">Cadastrar</button>
+						<button type="submit" class="signupbtn" id="btnCadastrarposto">Cadastrar</button>
 						<button onclick="funcaoCancelarCadastro()" type="button" class="cancelbtn">Cancelar</button> 
 						</div>
 					</div>
