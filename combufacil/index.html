@@ -6,6 +6,31 @@
 		<link rel="stylesheet" href="_css/style.css">
 		<script src="./js/jquery-2.2.4.min.js"></script>
 		<script src="./js/jquerymobile/jquery.mobile-1.4.5.min.js"></script>
+		<script>	
+			//jQuery( document ).ready(function() {
+				var attempt = 3; // Variable to count number of attempts.
+				// Below function Executes on click of login button.
+				function validate(){
+					var login = document.getElementById("login").value;
+					var senha = document.getElementById("senha").value;
+					if ( login == "admin" && senha == "admin"){
+						alert ("Login efetuado com sucesso");
+						window.location = "CadastroCombustivel.html"; // Redirecting to other page.
+						return false;
+					} else {
+						attempt --;// Decrementing by one.
+						alert("Você tem " + attempt + " tentativas restantes;");
+						// Disabling fields after 3 attempts.
+						if( attempt == 0){
+							document.getElementById("login").disabled = true;
+							document.getElementById("senha").disabled = true;
+							document.getElementById("ientrar").disabled = true;
+							return false;
+						}
+					}
+				}
+			//});
+		</script>
 	</head>
 	<body>
 		<div data-role="page" data-theme="b" >
@@ -20,18 +45,18 @@
 				<h2><center>Login</center></h2>
 				<hr>
 				<br>
-				<div data-role="form" class="form" >
+				<div data-role="form" class="form" method="post">
 					<form>
-						<Label for="clogin"> <b> Digite seu Email:</b><br>
-						<input type="text" name="firstname" name="login" id="clogin" required>
+						<Label for="login"> <b> Digite seu Email:</b><br>
+						<input type="text" name="login" id="login" required>
 						<br>
-						<Label for="cpsw"> <b>Digite sua Senha:</b><br>
-						<input type="password" name="lastname" name="psw" id="cpsw" required>
+						<Label for="senha"> <b>Digite sua Senha:</b><br>
+						<input type="password" name="senha" id="senha" required>
 						<br>		
-						<input type="submit" value="Entrar" id="ientrar">
-						<input type="button"  value="Cadastro de Cliente" onclick="window.location='CadastroCliente.html'" id="nsc">
-						<input type="button"  value="Cadastro de Posto" onclick="window.location='CadastroPosto.html'" id="nsc">
-						<input type="button"  value="Cadastro de Combustivel" onclick="window.location='CadastroCombustivel.html'" id="nsc">		
+						<input type="button" onClick="validate()" value="Entrar" id="ientrar">
+						<input type="button"  value="Cadastro de Cliente" onclick="window.location='CadastroCliente.html'">
+						<input type="button"  value="Cadastro de Posto" onclick="window.location='CadastroPosto.html'">
+						<input type="button"  value="Cadastro de Combustivel" onclick="window.location='CadastroCombustivel.html'">		
 					</form> 
 					<label>
 						<input type="checkbox" checked="checked" name="remember" style="margin-bottom:10px"> Lembrar-me

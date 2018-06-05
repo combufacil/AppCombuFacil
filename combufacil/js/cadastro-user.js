@@ -45,5 +45,6 @@ jQuery( document ).ready(function() {
 				alert(thrownError);
 			}
 		});
+		$.mobile.changePage("index.html", {transition: "pop"});
 	});
 });
