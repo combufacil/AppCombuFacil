@@ -66,6 +66,27 @@ html .ui-panel-page-container-b {
     width: 110px;
 }
 
+.area_combustivel .ui-btn{
+	width: 10px;
+    height: 19px;
+    border-radius: 50px;
+    margin: 0;
+    display: inline-block;
+    position: absolute;
+    z-index: 9;
+}
+
+.area_combustivel .ui-btn:before{
+	font-family: "FontAwesome";
+    content: "\f0c9";
+    color: #000;
+    display: block;
+    font-size: 24px;
+    position: absolute;
+    top: 18px;
+    left: 16px;
+}
+
 .pt-menu .ui-btn-inner {
     border: 0;
 }
