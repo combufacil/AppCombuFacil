@@ -21,7 +21,7 @@ $telefone = utf8_decode($_GET['telefone']);
 $celular = utf8_decode($_GET['celular']);
 $email = utf8_decode($_GET['email']);
 $senha = md5(utf8_decode($_GET['senha']));
-$confirmar_senha = utf8_decode($_GET['confirmar_senha']);
+//$confirmar_senha = utf8_decode($_GET['confirmar_senha']);
 
 $conn = new mysqli($servername, $username, $password);
 //  =========================
@@ -30,7 +30,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "INSERT INTO combufacil.cliente (nome, nascimento, cpf, endereco, num, cep, bairro, cidade, uf, telefone, celular, email, senha, confirmar_senha) VALUES ('$nome', '$nascimento', '$cpf', '$endereco', '$num', '$cep', '$bairro', '$cidade', '$uf', 'telefone', 'celular', '$email', '$senha', '$confirmar_senha')";
+$sql = "INSERT INTO combufacil.cliente (nome, nascimento, cpf, endereco, num, cep, bairro, cidade, uf, telefone, celular, email, senha) VALUES ('$nome', '$nascimento', '$cpf', '$endereco', '$num', '$cep', '$bairro', '$cidade', '$uf', '$telefone', '$celular', '$email', '$senha')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Cadastro efetuado com sucesso! ";

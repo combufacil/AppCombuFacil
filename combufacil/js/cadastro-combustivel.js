@@ -19,7 +19,7 @@ jQuery( document ).ready(function() {
 			"&diesel="+diesel+
 			"&gasolina_aditivada="+gasolina_aditivada+
 			"&gnv="+gnv,
-			url : "./js/cadastro-combustivel.php",
+			url : "https://combufacilcombr.000webhostapp.com/cadastro-combustivel.php",
 			success : function(resposta){
 				alert("Cadastro efetuado");
 			},

@@ -29,16 +29,18 @@
 		  }
 		</style>
 		<script>
-			$(document).ready(function() {
-				$("#escolher_combustivel").click(function(){
-					$(".form_combustivel").toggleClass("open");
+			jQuery(document).ready(function() {
+				jQuery("#escolher_combustivel").click(function(){
+					jQuery(".form_combustivel").toggleClass("open");
 				});
-			}); 
+			});
+			jQuery("#content").load('js/restrito.php');			
 		</script>
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2nEsmGHuUSAgINHRDrBoaY0qM-O5GuOw&callback=initMap">
 				</script>
 	</head>
 	<body>
+		<a href="js/logout.php">SAIR</a>
 		<div data-role="page" data-theme="b" >
 			<div  data-role="header" data-theme="a" data-position="fixed">
 				<div class="statusbar-overlay"></div>

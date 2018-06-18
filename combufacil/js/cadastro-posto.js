@@ -36,7 +36,7 @@ jQuery( document ).ready(function() {
 			"&email="+email+
 			"&senha="+senha+
 			"&confirma_senha="+confirma_senha,
-			url : "./js/cadastro-posto.php",
+			url : "https://combufacilcombr.000webhostapp.com/cadastro-posto.php",
 			success : function(resposta){
 				alert("Cadastro efetuado");
 			},
