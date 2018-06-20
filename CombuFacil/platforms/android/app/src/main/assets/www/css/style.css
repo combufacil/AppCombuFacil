@@ -1,0 +1,159 @@
+.ui-overlay-b,
+.ui-page-theme-b,
+.ui-page-theme-b .ui-panel-wrapper {
+	background-color: #2166ab;
+	border-color: #2166ab;
+	color: #fff;
+	text-shadow: 0 0px 0 #111;
+}
+
+.ui-body-b,
+.ui-page-theme-b .ui-body-inherit,
+html .ui-bar-b .ui-body-inherit,
+html .ui-body-b .ui-body-inherit,
+html body .ui-group-theme-b .ui-body-inherit,
+html .ui-panel-page-container-b {
+    background-color:           #fff /*{b-body-background-color}*/;
+    border-color:           #fff /*{b-body-border}*/;
+    color:                  #000 /*{b-body-color}*/;
+    text-shadow: 0 /*{b-body-shadow-x}*/ 0px /*{b-body-shadow-y}*/ 0 /*{b-body-shadow-radius}*/     #111 /*{b-body-shadow-color}*/;
+}
+
+.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
+    background-color: #f89719;
+    border-color: #f89719;
+    color: #fff;
+    text-shadow: 0 0px 0 #eee;
+    font-weight: 700;
+}
+
+.ui-page-theme-b .ui-btn, html .ui-bar-b .ui-btn, html .ui-body-b .ui-btn, html body .ui-group-theme-b .ui-btn, html head+body .ui-btn.ui-btn-b, .ui-page-theme-b .ui-btn:visited, html .ui-bar-b .ui-btn:visited, html .ui-body-b .ui-btn:visited, html body .ui-group-theme-b .ui-btn:visited, html head+body .ui-btn.ui-btn-b:visited {
+    background-color: #f89719;
+    border-color: #f89719;
+    color: #fff;
+    text-shadow: 0 0px 0 #111;
+}
+
+.imglogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+	
+.footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+	color: ;
+}
+
+.copyright {
+    font-size: 12px;
+    text-align: center;
+}
+
+.ui-content {
+    text-align: center;
+}
+
+.pt-menu .ui-btn {
+    cursor: pointer;
+    display: inline-block;
+    height: 100px;
+    margin: 5px !important;
+    padding: 10px;
+    text-align: center;
+    width: 110px;
+}
+
+.area_combustivel .ui-btn{
+	width: 10px;
+    height: 19px;
+    border-radius: 50px;
+    margin: 0;
+    display: inline-block;
+    position: absolute;
+    z-index: 9;
+}
+
+.area_combustivel .ui-btn:before{
+	font-family: "FontAwesome";
+    content: "\f0c9";
+    color: #000;
+    display: block;
+    font-size: 24px;
+    position: absolute;
+    top: 18px;
+    left: 16px;
+}
+
+.pt-menu .ui-btn-inner {
+    border: 0;
+}
+
+.pt-menu .ui-btn img {
+    /*height: 50px;*/
+}
+
+/* contact page */
+#contact .ui-br {
+    border: 0;
+}
+
+/* form underline bug fix */
+.ui-br {
+    border-bottom: none !important;
+}
+
+/* form errors */
+label.error {
+    color: red;
+    padding-top: .5em;
+    vertical-align: top;
+    font-weight:bold;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 22%;
+}
+
+/* table styles */
+.tablerow {
+    display: inline-block;
+    width: 100%;
+}
+
+.left-table {
+    text-align: right;
+    width: 25%; float: left;
+    padding-right: 2%;
+    font-weight: bold;
+}
+
+.right-table {
+    text-align: left;
+    width: 73%; float: left;
+}
+
+/* bottom back and next buttons */
+.previous-btn {
+    float: left;
+}
+
+.next-btn {
+    float: right;
+}
+
+/* toggle buttons styles */
+.ui-collapsible-heading-toggle {
+    border: none;
+}
+
+/* ui component tweaks */
+.ui-textalign-left {
+    text-align: left;
+}
+
+/* portfolio item right button stlye fix */
+.portfolio-item .ui-btn-icon-notext {
+    padding: 0 !important;
+}
