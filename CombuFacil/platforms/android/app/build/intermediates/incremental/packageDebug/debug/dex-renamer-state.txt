@@ -1,0 +1,4 @@
+#Fri Jun 22 19:21:58 BRT 2018
+base.0=/home/daniel-figueiredo/Documentos/CombuFacil/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+file.0=/home/daniel-figueiredo/Documentos/CombuFacil/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex
