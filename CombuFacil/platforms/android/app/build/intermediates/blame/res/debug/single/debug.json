@@ -1,49 +1,86 @@
 [
     {
+<<<<<<< HEAD
         "merged": "/home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_icon.png.flat",
         "source": "/home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/app/src/main/res/mipmap-xxhdpi/icon.png"
     },
     {
         "merged": "/home/daniel-figueiredo/Documentos/CombuFacil/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-xhdpi_screen.png.flat",
         "source": "/home/daniel-figueiredo/Documentos/CombuFacil/platforms/android/app/src/main/res/drawable-land-xhdpi/screen.png"
+=======
+        "merged": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-ldpi_screen.png.flat",
+        "source": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\drawable-land-ldpi\\screen.png"
+>>>>>>> bd0582ab9c07d5d0be86d4c75a50247bb809c317
     },
     {
-        "merged": "/home/daniel-figueiredo/Documentos/CombuFacil/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-hdpi_screen.png.flat",
-        "source": "/home/daniel-figueiredo/Documentos/CombuFacil/platforms/android/app/src/main/res/drawable-land-hdpi/screen.png"
+        "merged": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-mdpi_screen.png.flat",
+        "source": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\drawable-land-mdpi\\screen.png"
     },
     {
+<<<<<<< HEAD
         "merged": "/home/daniel-figueiredo/Documentos/CombuFacil/platforms/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_icon.png.flat",
         "source": "/home/daniel-figueiredo/Documentos/CombuFacil/platforms/android/app/src/main/res/mipmap-xxhdpi/icon.png"
+=======
+        "merged": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_icon.png.flat",
+        "source": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\icon.png"
     },
     {
-        "merged": "/home/daniel-figueiredo/Documentos/CombuFacil/platforms/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_icon.png.flat",
-        "source": "/home/daniel-figueiredo/Documentos/CombuFacil/platforms/android/app/src/main/res/mipmap-xxxhdpi/icon.png"
+        "merged": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_icon.png.flat",
+        "source": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\mipmap-xhdpi\\icon.png"
     },
     {
+        "merged": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_icon.png.flat",
+        "source": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon.png"
+>>>>>>> bd0582ab9c07d5d0be86d4c75a50247bb809c317
+    },
+    {
+        "merged": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-ldpi_screen.png.flat",
+        "source": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\drawable-port-ldpi\\screen.png"
+    },
+    {
+<<<<<<< HEAD
         "merged": "/home/daniel-figueiredo/Documentos/CombuFacil/platforms/android/app/build/intermediates/res/merged/debug/mipmap-hdpi_icon.png.flat",
         "source": "/home/daniel-figueiredo/Documentos/CombuFacil/platforms/android/app/src/main/res/mipmap-hdpi/icon.png"
+=======
+        "merged": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-ldpi_icon.png.flat",
+        "source": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\mipmap-ldpi\\icon.png"
     },
     {
-        "merged": "/home/daniel-figueiredo/Documentos/CombuFacil/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-xxhdpi_screen.png.flat",
-        "source": "/home/daniel-figueiredo/Documentos/CombuFacil/platforms/android/app/src/main/res/drawable-port-xxhdpi/screen.png"
+        "merged": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-xhdpi_screen.png.flat",
+        "source": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\drawable-land-xhdpi\\screen.png"
+>>>>>>> bd0582ab9c07d5d0be86d4c75a50247bb809c317
     },
     {
+        "merged": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_icon.png.flat",
+        "source": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\mipmap-hdpi\\icon.png"
+    },
+    {
+<<<<<<< HEAD
         "merged": "/home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/app/build/intermediates/res/merged/debug/mipmap-ldpi_icon.png.flat",
         "source": "/home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/app/src/main/res/mipmap-ldpi/icon.png"
     },
     {
         "merged": "/home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_icon.png.flat",
         "source": "/home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/app/src/main/res/mipmap-mdpi/icon.png"
+=======
+        "merged": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-xxxhdpi_screen.png.flat",
+        "source": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\drawable-port-xxxhdpi\\screen.png"
     },
     {
-        "merged": "/home/daniel-figueiredo/Documentos/CombuFacil/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-hdpi_screen.png.flat",
-        "source": "/home/daniel-figueiredo/Documentos/CombuFacil/platforms/android/app/src/main/res/drawable-port-hdpi/screen.png"
+        "merged": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_icon.png.flat",
+        "source": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\icon.png"
+>>>>>>> bd0582ab9c07d5d0be86d4c75a50247bb809c317
     },
     {
-        "merged": "/home/daniel-figueiredo/Documentos/CombuFacil/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-xxxhdpi_screen.png.flat",
-        "source": "/home/daniel-figueiredo/Documentos/CombuFacil/platforms/android/app/src/main/res/drawable-land-xxxhdpi/screen.png"
+        "merged": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_icon.png.flat",
+        "source": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon.png"
     },
     {
+        "merged": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-mdpi_screen.png.flat",
+        "source": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\drawable-port-mdpi\\screen.png"
+    },
+    {
+<<<<<<< HEAD
         "merged": "/home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/app/build/intermediates/res/merged/debug/xml_config.xml.flat",
         "source": "/home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/app/src/main/res/xml/config.xml"
     },
@@ -54,24 +91,34 @@
     {
         "merged": "/home/daniel-figueiredo/Documentos/CombuFacil/platforms/android/app/build/intermediates/res/merged/debug/xml_config.xml.flat",
         "source": "/home/daniel-figueiredo/Documentos/CombuFacil/platforms/android/app/src/main/res/xml/config.xml"
+=======
+        "merged": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-xhdpi_screen.png.flat",
+        "source": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\drawable-port-xhdpi\\screen.png"
+>>>>>>> bd0582ab9c07d5d0be86d4c75a50247bb809c317
     },
     {
-        "merged": "/home/daniel-figueiredo/Documentos/CombuFacil/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-xxhdpi_screen.png.flat",
-        "source": "/home/daniel-figueiredo/Documentos/CombuFacil/platforms/android/app/src/main/res/drawable-land-xxhdpi/screen.png"
+        "merged": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_icon.png.flat",
+        "source": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\mipmap-xhdpi\\icon.png"
     },
     {
+<<<<<<< HEAD
         "merged": "/home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-hdpi_screen.png.flat",
         "source": "/home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/app/src/main/res/drawable-port-hdpi/screen.png"
     },
     {
         "merged": "/home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-xhdpi_screen.png.flat",
         "source": "/home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/app/src/main/res/drawable-port-xhdpi/screen.png"
+=======
+        "merged": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml_config.xml.flat",
+        "source": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\xml\\config.xml"
+>>>>>>> bd0582ab9c07d5d0be86d4c75a50247bb809c317
     },
     {
-        "merged": "/home/daniel-figueiredo/Documentos/CombuFacil/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-mdpi_screen.png.flat",
-        "source": "/home/daniel-figueiredo/Documentos/CombuFacil/platforms/android/app/src/main/res/drawable-land-mdpi/screen.png"
+        "merged": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-hdpi_screen.png.flat",
+        "source": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\drawable-land-hdpi\\screen.png"
     },
     {
+<<<<<<< HEAD
         "merged": "/home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_icon.png.flat",
         "source": "/home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/app/src/main/res/mipmap-xxxhdpi/icon.png"
     },
@@ -150,5 +197,89 @@
     {
         "merged": "/home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-ldpi_screen.png.flat",
         "source": "/home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/app/src/main/res/drawable-land-ldpi/screen.png"
+=======
+        "merged": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-xxxhdpi_screen.png.flat",
+        "source": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\drawable-land-xxxhdpi\\screen.png"
+    },
+    {
+        "merged": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_icon.png.flat",
+        "source": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\mipmap-hdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-hdpi_screen.png.flat",
+        "source": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\drawable-land-hdpi\\screen.png"
+    },
+    {
+        "merged": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-ldpi_icon.png.flat",
+        "source": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\mipmap-ldpi\\icon.png"
+    },
+    {
+        "merged": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-xxhdpi_screen.png.flat",
+        "source": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\drawable-land-xxhdpi\\screen.png"
+    },
+    {
+        "merged": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-hdpi_screen.png.flat",
+        "source": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\drawable-port-hdpi\\screen.png"
+    },
+    {
+        "merged": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-xhdpi_screen.png.flat",
+        "source": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\drawable-port-xhdpi\\screen.png"
+    },
+    {
+        "merged": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-mdpi_screen.png.flat",
+        "source": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\drawable-land-mdpi\\screen.png"
+    },
+    {
+        "merged": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-xxxhdpi_screen.png.flat",
+        "source": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\drawable-port-xxxhdpi\\screen.png"
+    },
+    {
+        "merged": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-xhdpi_screen.png.flat",
+        "source": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\drawable-land-xhdpi\\screen.png"
+    },
+    {
+        "merged": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-xxhdpi_screen.png.flat",
+        "source": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\drawable-land-xxhdpi\\screen.png"
+    },
+    {
+        "merged": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-ldpi_screen.png.flat",
+        "source": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\drawable-land-ldpi\\screen.png"
+    },
+    {
+        "merged": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-ldpi_screen.png.flat",
+        "source": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\drawable-port-ldpi\\screen.png"
+    },
+    {
+        "merged": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-xxhdpi_screen.png.flat",
+        "source": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\drawable-port-xxhdpi\\screen.png"
+    },
+    {
+        "merged": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-hdpi_screen.png.flat",
+        "source": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\drawable-port-hdpi\\screen.png"
+    },
+    {
+        "merged": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-mdpi_screen.png.flat",
+        "source": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\drawable-port-mdpi\\screen.png"
+    },
+    {
+        "merged": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_icon.png.flat",
+        "source": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\mipmap-mdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-xxxhdpi_screen.png.flat",
+        "source": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\drawable-land-xxxhdpi\\screen.png"
+    },
+    {
+        "merged": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_icon.png.flat",
+        "source": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\mipmap-mdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml_config.xml.flat",
+        "source": "C:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\xml\\config.xml"
+    },
+    {
+        "merged": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-xxhdpi_screen.png.flat",
+        "source": "C:\\home\\daniel-figueiredo\\Documentos\\CombuFacil\\platforms\\android\\app\\src\\main\\res\\drawable-port-xxhdpi\\screen.png"
+>>>>>>> bd0582ab9c07d5d0be86d4c75a50247bb809c317
     }
 ]

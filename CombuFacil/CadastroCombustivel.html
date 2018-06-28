@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf8">
+		<script src="js/jquery-2.2.4.min.js"></script>
+		<script src="js/cadastro-combustivel.js"></script>	
+		<script src="js/jquerymobile/jquery.mobile-1.4.5.min.js"></script>
+		<link rel="stylesheet" href="js/jquerymobile/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" href="_css/style.css">
+		<script>			
+			function funcaoCancelarCadastro(){
+				var x;
+				var r=confirm("Deseja mesmo cancelar seu cadastro?");
+				if (r==true){
+					window.location.href = "index.html";
+				} else {
+					x="Você pressionou Cancelar!";
+				}
+				document.getElementById("demo").innerHTML=x;
+			}			
+		</script>
+	</head>
+	<body>
+		<div data-role="page" data-theme="b" >
+			<div  data-role="header" data-theme="a" data-position="fixed">
+				<h1>CombuFacil</h1>
+				<a onclick="window.location='index.html'" class="previous">&laquo; </a>
+				<!-- <a onclick="window.location='1.html'"  class="next"> &raquo;</a> -->
+			</div>		
+			<div data-role="main" class="ui-content" >
+
+				<img class="imglogo" align="center-right" src="_imagens/logo.png"/>    
+
+				<form class="modal-content" onSubmit="return false;" method="GET">
+					<div class="container">
+						<h2><center>Cadastro de Combustivel</center></h2>
+
+						<hr>
+						<label for="gasolina"><b>Gasolina</b></label>
+						<input type="text" id="gasolina" name="gasolina" required>
+
+						<label for="alcool"><b>Alcool</b></label>
+						<input type="text" name="alcool" id="alcool" value="">
+						
+						<label for="diesel"><b>Óleo Diesel</b></label>
+						<input type="text" name="diesel" id="diesel" value="">
+
+						<label for="gasolina_aditivada"><b>Gasolina Aditivada</b></label>
+						<input type="text" name="gasolina_aditivada" id="gasolina_aditivada" value="">
+
+						<label for="gnv"><b>GNV</b></label>
+						<input type="text" name="gnv" id="gnv">
+
+						<div class="clearfix">
+						<button type="submit" class="signupbtn" id="btnCadastrarcombustivel">Cadastrar Combustivel</button>
+						<button onclick="funcaoCancelarCadastro()" type="button" class="cancelbtn">Cancelar</button> 
+						</div>
+					</div>
+				</form>
+			</div>
+			<div data-role="footer" class="footer" data-theme="a" data-position="fixed"-->
+				<h1>CombuFacil</h1>
+			</div> 
+		</div>
+	</body>
+</html>

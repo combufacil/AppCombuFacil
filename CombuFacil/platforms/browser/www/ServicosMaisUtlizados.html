@@ -3,6 +3,7 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf8">
 		<script src="js/jquery-2.2.4.min.js"></script>
+<<<<<<< HEAD
 		<script src="js/"></script>
 		<script src="js/jquerymobile/jquery.mobile-1.4.5.min.js"></script>
 		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -37,20 +38,90 @@
 	  chart.draw(data, options);
 	}
 	</script>
+=======
+		<!--<script src="js/"></script>-->	
+		<script src="js/jquerymobile/jquery.mobile-1.4.5.min.js"></script>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<link rel="stylesheet" href="js/jquerymobile/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" href="_css/style.css">
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.0.1/Chart.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/angular-chart.js/1.1.1/angular-chart.js"></script>
+		<style>
+			#grafico_pizza{
+				width: 300px;
+				height: 300px;
+			}
+			canvas#grafico_pizza {
+				background:#f3f3f3;
+				overflow:scroll !important;
+				transform: translate3d(0, 0, 0);
+			}
+			table{
+				width: 100%;
+				background-color: #fff;
+				opacity: 0.7;
+				color: #000;
+			}
+			table td{
+				border-bottom: 1px solid #000;
+				border-right: 1px solid #000;
+			}
+			table td:last-child{
+				border-right: 0;
+			}
+		</style>
+		<script>
+		(function() {
+		  'use strict';
+
+		  angular
+			.module('app', ['chart.js']);
+
+		  angular
+			.module('app')
+			.controller('GraficoController', GraficoController);
+
+		  GraficoController.$inject = [];
+
+		  function GraficoController() {
+			var vm = this;
+
+			vm.grafico = {};
+			vm.grafico.descricoes = ['Carros', 'Motos', 'Lanchas'];
+			vm.grafico.valores = [2, 2, 2, 2, 2];
+		  }
+		})();
+		</script>
+	</head>
+	<body>
+	
+>>>>>>> bd0582ab9c07d5d0be86d4c75a50247bb809c317
 		<div data-role="page" data-theme="b" >
 			<div  data-role="header" data-theme="a" data-position="fixed">
 				<h1>CombuFacil</h1>
 				<a onclick="window.location='index.html'" class="previous">&laquo; </a>
 				<!-- <a onclick="window.location='1.html'"  class="next"> &raquo;</a> -->
+<<<<<<< HEAD
 			</div>
 			<div data-role="main" class="ui-content" >
 
 				<img class="imglogo" align="center-right" src="img/logo.png"/>
+=======
+			</div>		
+			<div data-role="main" class="ui-content" >
+
+				<img class="imglogo" align="center-right" src="_imagens/logo.png"/>  
+>>>>>>> bd0582ab9c07d5d0be86d4c75a50247bb809c317
 
 				<form class="modal-content" onSubmit="return false;" method="GET">
 					<div class="container">
 						<h2><center>Combustíveis mais Buscados</center></h2>
+<<<<<<< HEAD
 						<hr>
+=======
+						<hr>						
+>>>>>>> bd0582ab9c07d5d0be86d4c75a50247bb809c317
 						<table>
 							<thead>
 								<td>Combustivel</td>
@@ -58,6 +129,7 @@
 								<td>% de Busca</td>
 							</thead>
 							<tbody>
+<<<<<<< HEAD
 								<td>Gasolina</td>
 								<td>35</td>
 								<td>50%</td>
@@ -73,3 +145,67 @@
 		</div>
 	</body>
 </html>
+=======
+								<tr>
+									<td class="td_gasolina">Gasolina</td>
+									<td>35</td>
+									<td>20%</td>
+								</tr>
+								<tr>
+									<td class="td_alcool">Alcool</td>
+									<td>35</td>
+									<td>20%</td>
+								</tr>
+								<tr>
+									<td class="td_diesel">Diesel</td>
+									<td>35</td>
+									<td>20%</td>
+								</tr>
+								<tr>
+									<td class="td_gasolina_aditivada">Gas. Aditivada</td>
+									<td>35</td>
+									<td>20%</td>
+								</tr>
+								<tr class="td_gnv">
+									<td>GNV</td>
+									<td>35</td>
+									<td>20%</td>
+								</tr>
+							</body>
+						</table>
+						
+					</div>
+				</form>
+				<div ng-app="app">
+				  <div ng-controller="GraficoController as vm" style="float: left;height: 65%; width: 58%; margin-top: 25px;">
+					<canvas id="pie" class="chart chart-pie " chart-data="vm.grafico.valores" chart-labels="vm.grafico.descricoes">
+					</canvas>
+				  </div>
+				  <br/>
+				  <div style="float: left; width: 41%; margin-bottom: 25px; background-color: #fff; opacity: 0.7; color: #000;">
+					<p style="margin: 8px 0px;">Legenda</p>
+					<hr>
+					<div style="width: 20px; height: 15px; border: 1px solid #000; background-color: #FDB45C;float: left; margin-left: 5px;"></div>
+					<span>Gasolina</span>
+					<br/>
+					<div style="width: 20px; height: 15px; border: 1px solid #000; background-color: #97BBCD;float: left; margin-left: 5px;"></div>
+					<span>Alcool</span>
+					<br/>
+					<div style="width: 20px; height: 15px; border: 1px solid #000; background-color: #DCDCDC;float: left; margin-left: 5px;"></div>
+					<span>Diesel</span>
+					<br/>
+					<div style="width: 20px; height: 15px; border: 1px solid #000; background-color: #F7464A;float: left; margin-left: 5px;"></div>
+					<span>Gas.Aditivada</span>
+					<br/>
+					<div style="width: 20px; height: 15px; border: 1px solid #000; background-color: #46BFBD;float: left; margin-left: 5px;"></div>
+					<span>GNV</span>
+				  </div>
+				</div>
+			</div>
+			<div data-role="footer" class="footer" data-theme="a" data-position="fixed"-->
+				<h1>CombuFacil</h1>
+			</div> 
+		</div>
+	</body>
+</html>
+>>>>>>> bd0582ab9c07d5d0be86d4c75a50247bb809c317

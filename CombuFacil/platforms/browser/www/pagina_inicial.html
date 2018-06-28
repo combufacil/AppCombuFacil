@@ -6,8 +6,11 @@
 		<link rel="stylesheet" href="css/style.css">
 		<script src="./js/jquery-2.2.4.min.js"></script>
 		<script src="./js/jquerymobile/jquery.mobile-1.4.5.min.js"></script>
+<<<<<<< HEAD
 		<script src="cordova.js" type="text/javascript"></script>
 		<script src="./js/mapa.js" type="text/javascript"></script>
+=======
+>>>>>>> bd0582ab9c07d5d0be86d4c75a50247bb809c317
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 		<style>
@@ -60,6 +63,62 @@
 					<input type="radio" name="combustivel_tipo" value="gnv"> GNV<br>
 				</form>
 				<div id="map"></div>
+<<<<<<< HEAD
+=======
+				<script>
+
+					function initMap() {
+					//var infoWindow = new google.maps.InfoWindow({map: map});
+
+					var map = new google.maps.Map(document.getElementById('map'), {
+					  zoom: 14,
+					  center: {lat: -23.491349, lng: -46.426613},
+					  mapTypeId: 'terrain'
+					});
+
+					// Try HTML5 geolocation.
+					/*if (navigator.geolocation) {
+					  navigator.geolocation.getCurrentPosition(function(position) {
+						var pos = {
+						  lat: position.coords.latitude,
+						  lng: position.coords.longitude
+						};
+
+						infoWindow.setPosition(pos);
+						infoWindow.setContent('Location found.');
+						map.setCenter(pos);
+					  }, function() {
+						handleLocationError(true, infoWindow, map.getCenter());
+					  });
+					} else {
+					  // Browser doesn't support Geolocation
+					  handleLocationError(false, infoWindow, map.getCenter());
+					}*/
+
+
+					var flightPlanCoordinates = [
+					  {lat: -23.491349, lng: -46.426613},
+					  {lat: -23.478632, lng: -46.423536}
+					];
+					var flightPath = new google.maps.Polyline({
+					  path: flightPlanCoordinates,
+					  geodesic: true,
+					  strokeColor: '#FF0000',
+					  strokeOpacity: 1.0,
+					  strokeWeight: 2
+					});
+
+					flightPath.setMap(map);
+				  }
+					function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+						infoWindow.setPosition(pos);
+						infoWindow.setContent(browserHasGeolocation ?
+											  'Error: The Geolocation service failed.' :
+											  'Error: Your browser doesn\'t support geolocation.');
+					  }
+				</script>
+
+>>>>>>> bd0582ab9c07d5d0be86d4c75a50247bb809c317
 			</div>
 			<div data-role="footer" class="footer" data-theme="a" data-position="fixed">
 				<h1>CombuFacil</h1>
