@@ -36,8 +36,11 @@
 			});
 			jQuery("#content").load('js/restrito.php');
 		</script>
+		<script type="text/javascript" src="cordova.js"></script>
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2nEsmGHuUSAgINHRDrBoaY0qM-O5GuOw&callback=initMap">
-				</script>
+		</script>
+		<script type="text/javascript" src="./js/mapa.js">app.initialize();</script>
+
 	</head>
 	<body>
 		<a href="js/logout.php">SAIR</a>
@@ -58,58 +61,6 @@
 					<input type="radio" name="combustivel_tipo" value="gnv"> GNV<br>
 				</form>
 				<div id="map"></div>
-				<script>
-
-					function initMap() {
-					//var infoWindow = new google.maps.InfoWindow({map: map});
-
-					var map = new google.maps.Map(document.getElementById('map'), {
-					  zoom: 14,
-					  center: {lat: -23.491349, lng: -46.426613},
-					  mapTypeId: 'terrain'
-					});
-
-					// Try HTML5 geolocation.
-					/*if (navigator.geolocation) {
-					  navigator.geolocation.getCurrentPosition(function(position) {
-						var pos = {
-						  lat: position.coords.latitude,
-						  lng: position.coords.longitude
-						};
-
-						infoWindow.setPosition(pos);
-						infoWindow.setContent('Location found.');
-						map.setCenter(pos);
-					  }, function() {
-						handleLocationError(true, infoWindow, map.getCenter());
-					  });
-					} else {
-					  // Browser doesn't support Geolocation
-					  handleLocationError(false, infoWindow, map.getCenter());
-					}*/
-
-
-					var flightPlanCoordinates = [
-					  {lat: -23.491349, lng: -46.426613},
-					  {lat: -23.478632, lng: -46.423536}
-					];
-					var flightPath = new google.maps.Polyline({
-					  path: flightPlanCoordinates,
-					  geodesic: true,
-					  strokeColor: '#FF0000',
-					  strokeOpacity: 1.0,
-					  strokeWeight: 2
-					});
-
-					flightPath.setMap(map);
-				  }
-					function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-						infoWindow.setPosition(pos);
-						infoWindow.setContent(browserHasGeolocation ?
-											  'Error: The Geolocation service failed.' :
-											  'Error: Your browser doesn\'t support geolocation.');
-					  }
-				</script>
 
 			</div>
 			<div data-role="footer" class="footer" data-theme="a" data-position="fixed">

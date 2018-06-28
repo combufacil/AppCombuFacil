@@ -10,7 +10,15 @@
   "cordova-plugin-geolocation": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-geolocation@4.0.1"
+      "id": "cordova-plugin-geolocation@^4.0.1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "org.apache.cordova.geolocation": {
+    "source": {
+      "type": "registry",
+      "id": "org.apache.cordova.geolocation@^0.3.6"
     },
     "is_top_level": true,
     "variables": {}
