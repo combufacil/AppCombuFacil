@@ -2,12 +2,11 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf8">
-		<link rel="stylesheet" href="./js/jquerymobile/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" href="js/jquerymobile/jquery.mobile-1.4.5.min.css">
 		<link rel="stylesheet" href="css/style.css">
-		<script src="./js/index.js"></script>
-		<script src="./js/jquery-2.2.4.min.js"></script>
-		<script src="./js/jquerymobile/jquery.mobile-1.4.5.min.js"></script>
-		<script>
+		<script src="js/jquery-2.2.4.min.js"></script>
+		<script src="js/jquerymobile/jquery.mobile-1.4.5.min.js"></script>
+		<script>	
 			$(document).ready(function(){
 				$('#errolog').hide(); //Esconde o elemento com id errolog
 				$('#formlogin').submit(function(){ 	//Ao submeter formulário
@@ -15,47 +14,41 @@
 					var senha=$('#senha').val();	//Pega valor do campo senha
 					$.ajax({			//Função AJAX
 						url:"https://combufacilcombr.000webhostapp.com/login.php",			//Arquivo php
+						//url:"js/login.php",			//Arquivo php
 						type:"post",				//Método de envio
-						data:
+						data: 
 						"login="+login+
 						"&senha="+senha,	//Dados
 			   			success: function (result){			//Sucesso no AJAX
-			                		if(result==1){
-			                			location.href='restrito.php'	//Redireciona
-			                		}else if(result != 1){
-										alert("deu ruim");
-			                			$('#errolog').show();		//Informa o erro
-			                		}
-			            		}
+							if(result==1){						
+								//location.href='js/restrito.php'	//Redireciona
+								//location.href='https://combufacilcombr.000webhostapp.com/restrito.php'
+								location.href='pagina_inicial.html'
+							}else if(result != 1){
+								alert("deu ruim");
+								$('#errolog').show();		//Informa o erro
+							}
+						}
 					})
 					return false;	//Evita que a página seja atualizada
 				})
 			})
-
 		</script>
 	</head>
 	<body>
-	<style>
-		.Erro{
-			border-color: red;
-		}
-
-
-	</style>
 		<div data-role="page" data-theme="b" >
 			<div  data-role="header" data-theme="a" data-position="fixed">
 				<div class="statusbar-overlay"></div>
 				<!-- Panels overlay-->
 				<div class="panel-overlay"></div>
 				<h1>CombuFacil</h1>
-			</div>
+			</div>			
 			<div data-role="main" class="ui-content" >
-				<img class="imglogo" align="center-right" src="img/logo.png"/>
+				<img class="imglogo" align="center-right" src="img/logo.png"/>  
 				<h2><center>Login</center></h2>
 				<hr>
 				<br>
 				<div data-role="form">
-					<input type="button" value="trapaça" onclick="window.location='pagina_inicial.html'"/>
 					<h2 id="errolog">Usuário ou senha errados!</h2>
 					<form class="form" id="formlogin">
 						<input type="email" id="email" class="login" placeholder="Digite seu e-mail" required="" />
@@ -63,18 +56,18 @@
 						<button type="submit">Entrar</button>
 						<input type="button"  value="Cadastro de Cliente" onclick="window.location='CadastroCliente.html'">
 						<input type="button"  value="Cadastro de Posto" onclick="window.location='CadastroPosto.html'">
-						<input type="button"  value="Cadastro de Combustivel" onclick="window.location='CadastroCombustivel.html'">
+						<input type="button"  value="Cadastro de Combustivel" onclick="window.location='CadastroCombustivel.html'">	
 						<input type="button"  value="historico de busca" onclick="window.location='HistoricoConsulta.html'">
-						<input type="button"  value="Serviços mais Utilizados" onclick="window.location='ServicosMaisUtlizados.html'">
-					</form>
+						<input type="button"  value="Serviços mais Utilizados" onclick="window.location='ServicosMaisUtlizados.html'">						
+					</form> 
 					<label>
 						<input type="checkbox" checked="checked" name="remember" style="margin-bottom:10px"> Lembrar-me
-					</label>
+					</label> 
 				</div>
-			</div>
+			</div>					
 			<div data-role="footer" class="footer" data-theme="a" data-position="fixed">
 				<h1>CombuFacil</h1>
-			</div>
+			</div>   
 		</div>
 	</body>
 </html>

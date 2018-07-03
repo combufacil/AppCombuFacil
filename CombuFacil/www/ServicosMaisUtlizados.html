@@ -7,10 +7,10 @@
 		<script src="js/jquerymobile/jquery.mobile-1.4.5.min.js"></script>
 		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 		<link rel="stylesheet" href="js/jquerymobile/jquery.mobile-1.4.5.min.css">
-		<link rel="stylesheet" href="_css/style.css">
-		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+		<!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.0.1/Chart.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/angular-chart.js/1.1.1/angular-chart.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/angular-chart.js/1.1.1/angular-chart.js"></script>-->
 		<style>
 			#grafico_pizza{
 				width: 300px;
@@ -36,7 +36,7 @@
 			}
 		</style>
 		<script>
-		(function() {
+		/*(function() {
 		  'use strict';
 
 		  angular
@@ -55,7 +55,7 @@
 			vm.grafico.descricoes = ['Carros', 'Motos', 'Lanchas'];
 			vm.grafico.valores = [2, 2, 2, 2, 2];
 		  }
-		})();
+		})();*/
 		</script>
 	</head>
 	<body>
@@ -63,12 +63,12 @@
 		<div data-role="page" data-theme="b" >
 			<div  data-role="header" data-theme="a" data-position="fixed">
 				<h1>CombuFacil</h1>
-				<a onclick="window.location='index.html'" class="previous">&laquo; </a>
+				<a onclick="window.location='opcoes_posto.html'" class="previous">&laquo; </a>
 				<!-- <a onclick="window.location='1.html'"  class="next"> &raquo;</a> -->
 			</div>		
 			<div data-role="main" class="ui-content" >
 
-				<img class="imglogo" align="center-right" src="_imagens/logo.png"/>  
+				<img class="imglogo" align="center-right" src="img/logo.png"/>    
 
 				<form class="modal-content" onSubmit="return false;" method="GET">
 					<div class="container">
@@ -111,7 +111,7 @@
 						
 					</div>
 				</form>
-				<div ng-app="app">
+				<!--<div ng-app="app">
 				  <div ng-controller="GraficoController as vm" style="float: left;height: 65%; width: 58%; margin-top: 25px;">
 					<canvas id="pie" class="chart chart-pie " chart-data="vm.grafico.valores" chart-labels="vm.grafico.descricoes">
 					</canvas>
@@ -135,7 +135,7 @@
 					<div style="width: 20px; height: 15px; border: 1px solid #000; background-color: #46BFBD;float: left; margin-left: 5px;"></div>
 					<span>GNV</span>
 				  </div>
-				</div>
+				</div>-->
 			</div>
 			<div data-role="footer" class="footer" data-theme="a" data-position="fixed"-->
 				<h1>CombuFacil</h1>

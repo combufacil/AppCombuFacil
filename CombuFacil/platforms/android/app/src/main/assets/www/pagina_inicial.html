@@ -2,70 +2,411 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf8">
-		<link rel="stylesheet" href="./js/jquerymobile/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" href="js/jquerymobile/jquery.mobile-1.4.5.min.css">
 		<link rel="stylesheet" href="css/style.css">
-		<script src="./js/jquery-2.2.4.min.js"></script>
-		<script src="./js/jquerymobile/jquery.mobile-1.4.5.min.js"></script>
+		<script src="js/jquery-2.2.4.min.js"></script>
+		<script src="js/jquerymobile/jquery.mobile-1.4.5.min.js"></script>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-
+		
 		<style>
 		  /* Always set the map height explicitly to define the size of the div
 		   * element that contains the map. */
-		  #map {
-			height: 100vh;
+		 
+		  #map-canvas{
+			height: 79vh;
 			width: 100vw;
-		  }
+			}
 		  /* Optional: Makes the sample page fill the window. */
 		  html, body {
 			height: 100%;
 			margin: 0;
 			padding: 0;
 		  }
-		  .form_combustivel{
-			display: none;
+		  .form_combustivel .ui-select{
+			margin: 0!important;
 		  }
-		  .form_combustivel.open{
-			display: block;
+		  .form_combustivel .ui-btn.ui-corner-all{
+			border-radius: 0!important;
+			width: 41%!important;
+			float: left!important;
+			background-color: #2166ab;
+			border-color: #2166ab;
+			margin: 0!important;
+			position: relative!important;
+		  }
+		  .cancelar_rota{
+			border-radius: 0!important;
+			width: 42.8%!important;
+			float: left!important;
+			background-color: #ff0000!important;
+			border-color: #ff0000!important;
+			margin: 0!important;
+			position: static!important;
+		  }
+		  .escolher_combustivel option{
+			margin-left: 5px!important;
 		  }
 		</style>
 		<script>
-			jQuery(document).ready(function() {
-				jQuery("#escolher_combustivel").click(function(){
-					jQuery(".form_combustivel").toggleClass("open");
-				});
-			});
-			jQuery("#content").load('js/restrito.php');
+			jQuery("#content").load('js/restrito.php');			
 		</script>
-		<script type="text/javascript" src="cordova.js"></script>
-		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2nEsmGHuUSAgINHRDrBoaY0qM-O5GuOw&callback=initMap">
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2nEsmGHuUSAgINHRDrBoaY0qM-O5GuOw">
 		</script>
-		<script type="text/javascript" src="./js/mapa.js">app.initialize();</script>
-
 	</head>
-	<body>
-		<a href="js/logout.php">SAIR</a>
+	<body onload="resetMap()">
 		<div data-role="page" data-theme="b" >
 			<div  data-role="header" data-theme="a" data-position="fixed">
 				<div class="statusbar-overlay"></div>
 				<!-- Panels overlay-->
 				<div class="panel-overlay"></div>
 				<h1>CombuFacil</h1>
-			</div>
+			</div>			
 			<div data-role="main" class="ui-content area_combustivel" style="padding: 0;">
-				<input type="button" id="escolher_combustivel" class="escolher_combustivel">
 				<form name="form_combustivel" id="form_combustivel" class="form_combustivel" method="post" action="">
-					<input type="radio" name="combustivel_tipo" value="gasolina"> Gasolina<br>
-					<input type="radio" name="combustivel_tipo" value="etanol"> Etanol<br>
-					<input type="radio" name="combustivel_tipo" value="diesel"> Diesel<br>
-					<input type="radio" name="combustivel_tipo" value="gasolina_aditivada"> Gasolina Aditivada<br>
-					<input type="radio" name="combustivel_tipo" value="gnv"> GNV<br>
+					<select name="example" class="escolher_combustivel">
+						<option selected="selected">Combstivel</option>
+						<option value="gasolina">Gasolina</option>
+						<option value="alcool">Alcool</option>
+						<option value="diesel">Diesel</option>
+						<option value="gasolina_aditivada">Gasolina Aditivada</option>
+						<option value="gnv">GNV</option>
+					</select>
 				</form>
-				<div id="map"></div>
+				<button onclick="resetMap()" class="cancelar_rota">Cancelar rota</button>
+				<div id="map-canvas"></div>
+				
+				<script>
+					
+				/*
+					var directionsDisplay = new google.maps.DirectionsRenderer();
+					var directionsService = new google.maps.DirectionsService();
+					var image = new google.maps.MarkerImage('icon.png');
+					var map;
 
-			</div>
+					var boudha = new google.maps.LatLng(-23.4962956, -46.5129356);
+					var hattisar = new google.maps.LatLng(-23.4945169, -46.5066526);
+					var posto2 = new google.maps.LatLng(-23.4955846, -46.5080237);
+					var posto3 = new google.maps.LatLng(-23.5281771, -46.4717139);
+
+					var mapOptions = {
+						zoom: 14,
+						center: boudha
+					};
+
+					map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+					directionsDisplay.setMap(map);
+					var marker;
+					navigator.geolocation.getCurrentPosition(function(position) {
+						var pos = {lat: position.coords.latitude, lng: position.coords.longitude};
+						marker = new google.maps.Marker({
+							position: pos,
+							map: map,
+							title: 'Sua Localização!'
+						});
+						marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png');
+					});
+					var marker2 = new google.maps.Marker({
+						position: hattisar,
+						map: map,
+						icon: image,
+						title: 'destination'
+					});
+					console.log(marker2);
+					var marker3 = new google.maps.Marker({
+						position: posto2,
+						map: map,
+						icon: image,
+						title: 'destination'
+					});
+					console.log(marker3);
+
+						
+						
+					function calculateRoute(minhaPos){		
+						navigator.geolocation.getCurrentPosition(function(position) {
+							var pos = {lat: position.coords.latitude, lng: position.coords.longitude};
+							var request = {
+								origin: pos,
+								destination: hattisar,
+								travelMode: 'DRIVING'
+							};
+
+							directionsService.route(request, function(result, status){
+
+								if(status == "OK") {
+									directionsDisplay.setDirections(result);
+									
+								}
+							});
+						});
+					}	
+
+					function calculateRoute2(){				
+						navigator.geolocation.getCurrentPosition(function(position) {
+							var pos = {lat: position.coords.latitude, lng: position.coords.longitude};
+							var request = {
+								origin: pos,
+								destination: posto2,
+								travelMode: 'DRIVING'
+							};
+							directionsService.route(request, function(result, status){
+								if(status == "OK") {
+									directionsDisplay.setDirections(result);						
+								}
+							});
+						});
+					}	
+					
+					function getLatLong(){			
+						navigator.geolocation.getCurrentPosition(function(position) {
+								var pos = {lat: position.coords.latitude, lng: position.coords.longitude};
+						});
+					}
+								
+					
+					function calculateRoute3(coor){
+						var request = {
+							origin:  coor,
+							destination: posto3,
+							travelMode: 'DRIVING'
+						};
+						directionsService.route(request, function(result, status){
+
+							if(status == "OK") {
+								directionsDisplay.setDirections(result);
+								
+							}
+						});
+					}
+					
+					function calcRouteDriving(varOrigin, varDesti) {
+						var request = {
+							origin:  varOrigin,
+							destination: varDesti,
+							travelMode: 'DRIVING'
+						};
+						directionsService.route(request, function(result, status){
+							if(status == "OK") {
+								directionsDisplay.setDirections(result);					
+							}
+						});			
+					}
+				google.maps.event.addListener(marker2, 'click', function() {
+					calculateRoute();
+					marker.setMap(null);
+					marker2.setMap(null);	
+					marker3.setMap(null);
+			  });
+
+				google.maps.event.addListener(marker3, 'click', function() {
+					calculateRoute2();
+					marker.setMap(null);
+					marker2.setMap(null);	
+					marker3.setMap(null);
+			  });*/
+			  
+						function resetMap(){
+						var directionsDisplay = new google.maps.DirectionsRenderer();
+					var directionsService = new google.maps.DirectionsService();
+					var image = new google.maps.MarkerImage('_imagens/icon.png');
+					var map;
+
+					var boudha = new google.maps.LatLng(-23.4962956, -46.5129356);
+					var hattisar = new google.maps.LatLng(-23.4945169, -46.5066526);
+					var posto2 = new google.maps.LatLng(-23.4955846, -46.5080237);
+					var posto3 = new google.maps.LatLng(-23.5281771, -46.4717139);
+
+					var mapOptions = {
+						zoom: 14,
+						center: boudha
+					};
+
+					map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+					directionsDisplay.setMap(map);
+					var marker;
+					navigator.geolocation.getCurrentPosition(function(position) {
+						var pos = {lat: position.coords.latitude, lng: position.coords.longitude};
+						marker = new google.maps.Marker({
+							position: pos,
+							map: map,
+							title: 'Sua Localização!'
+						});
+						marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png');
+					});
+					var marker2 = new google.maps.Marker({
+						position: hattisar,
+						map: map,
+						title: 'destination'
+					});
+					marker2.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png');
+					console.log(marker2);
+					var marker3 = new google.maps.Marker({
+						position: posto2,
+						map: map,
+						title: 'destination'
+					});
+					marker3.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png');
+					console.log(marker3);
+
+						
+						
+					function calculateRoute(minhaPos){		
+						navigator.geolocation.getCurrentPosition(function(position) {
+							var pos = {lat: position.coords.latitude, lng: position.coords.longitude};
+							var request = {
+								origin: pos,
+								destination: hattisar,
+								travelMode: 'DRIVING'
+							};
+
+							directionsService.route(request, function(result, status){
+
+								if(status == "OK") {
+									directionsDisplay.setDirections(result);
+									
+								}
+							});
+						});
+					}	
+
+					function calculateRoute2(){				
+						navigator.geolocation.getCurrentPosition(function(position) {
+							var pos = {lat: position.coords.latitude, lng: position.coords.longitude};
+							var request = {
+								origin: pos,
+								destination: posto2,
+								travelMode: 'DRIVING'
+							};
+							directionsService.route(request, function(result, status){
+								if(status == "OK") {
+									directionsDisplay.setDirections(result);						
+								}
+							});
+						});
+					}	
+					
+					function getLatLong(){			
+						navigator.geolocation.getCurrentPosition(function(position) {
+								var pos = {lat: position.coords.latitude, lng: position.coords.longitude};
+						});
+					}
+								
+					
+					function calculateRoute3(coor){
+						var request = {
+							origin:  coor,
+							destination: posto3,
+							travelMode: 'DRIVING'
+						};
+						directionsService.route(request, function(result, status){
+
+							if(status == "OK") {
+								directionsDisplay.setDirections(result);
+								
+							}
+						});
+					}
+					
+					function calcRouteDriving(varOrigin, varDesti) {
+						var request = {
+							origin:  varOrigin,
+							destination: varDesti,
+							travelMode: 'DRIVING'
+						};
+						directionsService.route(request, function(result, status){
+							if(status == "OK") {
+								directionsDisplay.setDirections(result);					
+							}
+						});			
+					}
+				google.maps.event.addListener(marker2, 'click', function() {
+					calculateRoute();
+					marker.setMap(null);
+					marker2.setMap(null);	
+					marker3.setMap(null);
+			  });
+
+				google.maps.event.addListener(marker3, 'click', function() {
+					calculateRoute2();
+					marker.setMap(null);
+					marker2.setMap(null);	
+					marker3.setMap(null);
+			  });
+						/*
+							var varOpt = {
+								zoom: 14,
+								center: boudha
+							};
+							var mm = new google.maps.Map(document.getElementById('map-canvas'), varOpt);
+							
+					var marker2 = new google.maps.Marker({
+						position: hattisar,
+						map: mm,
+						icon: image,
+						title: 'destination'
+					});
+					console.log(marker2);
+					var marker3 = new google.maps.Marker({
+						position: posto2,
+						map: mm,
+						icon: image,
+						title: 'destination'
+					});
+							function calculateRoute(minhaPos){		
+						navigator.geolocation.getCurrentPosition(function(position) {
+							var pos = {lat: position.coords.latitude, lng: position.coords.longitude};
+							var request = {
+								origin: pos,
+								destination: hattisar,
+								travelMode: 'DRIVING'
+							};
+
+							directionsService.route(request, function(result, status){
+
+								if(status == "OK") {
+									directionsDisplay.setDirections(result);
+									
+								}
+							});
+						});
+					}	
+
+					function calculateRoute2(){				
+						navigator.geolocation.getCurrentPosition(function(position) {
+							var pos = {lat: position.coords.latitude, lng: position.coords.longitude};
+							var request = {
+								origin: pos,
+								destination: posto2,
+								travelMode: 'DRIVING'
+							};
+							directionsService.route(request, function(result, status){
+								if(status == "OK") {
+									directionsDisplay.setDirections(result);						
+								}
+							});
+						});
+					}	
+					
+							google.maps.event.addListener(marker2, 'click', function() {
+								calculateRoute();
+								marker.setMap(null);
+								marker2.setMap(null);	
+								marker3.setMap(null);
+						  });
+
+						google.maps.event.addListener(marker3, 'click', function() {
+							calculateRoute2();
+							marker.setMap(null);
+							marker2.setMap(null);	
+							marker3.setMap(null);
+							});*/
+						}						
+				</script>
 			<div data-role="footer" class="footer" data-theme="a" data-position="fixed">
 				<h1>CombuFacil</h1>
-			</div>
+			</div>   
 		</div>
 	</body>
 </html>

@@ -1,6 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<merger version="3"><dataSet config="main"><source path="/home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/CordovaLib/assets"/><source path="/home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/CordovaLib/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/CordovaLib/src/debug/assets"/></dataSet></merger>
-=======
-<merger version="3"><dataSet config="main"><source path="C:\EasyPHP-Devserver-17\eds-www\appCombuFacil\CombuFacil\platforms\android\CordovaLib\assets"/><source path="C:\EasyPHP-Devserver-17\eds-www\appCombuFacil\CombuFacil\platforms\android\CordovaLib\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="C:\EasyPHP-Devserver-17\eds-www\appCombuFacil\CombuFacil\platforms\android\CordovaLib\src\debug\assets"/></dataSet></merger>
->>>>>>> bd0582ab9c07d5d0be86d4c75a50247bb809c317
+<merger version="3"><dataSet config="main"><source path="C:\Users\Aluno\appCombuFacil\CombuFacil\platforms\android\CordovaLib\assets"/><source path="C:\Users\Aluno\appCombuFacil\CombuFacil\platforms\android\CordovaLib\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="C:\Users\Aluno\appCombuFacil\CombuFacil\platforms\android\CordovaLib\src\debug\assets"/></dataSet></merger>

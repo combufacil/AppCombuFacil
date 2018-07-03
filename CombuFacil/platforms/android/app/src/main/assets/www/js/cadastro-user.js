@@ -21,12 +21,12 @@ jQuery( document ).ready(function() {
 			url : "https://combufacilcombr.000webhostapp.com/cadastro-usuario.php",
 			success : function(resposta){
 				alert("Cadastro efetuado");
+				window.location.href = "index.html";
 			},
 			error : function(xhr, ajaxOptions, thrownError){
 				alert(xhr.status);
 				alert(thrownError);
 			}
 		});
-		$.mobile.changePage("index.html", {transition: "pop"});
 	});
 });

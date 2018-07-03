@@ -20,19 +20,19 @@
 						"login="+login+
 						"&senha="+senha,	//Dados
 			   			success: function (result){			//Sucesso no AJAX
-			                		if(result==1){						
-			                			//location.href='js/restrito.php'	//Redireciona
-										location.href='https://combufacilcombr.000webhostapp.com/restrito.php'
-			                		}else if(result != 1){
-										alert("deu ruim");
-			                			$('#errolog').show();		//Informa o erro
-			                		}
-			            		}
+							if(result==1){						
+								//location.href='js/restrito.php'	//Redireciona
+								//location.href='https://combufacilcombr.000webhostapp.com/restrito.php'
+								location.href='pagina_inicial.html'
+							}else if(result != 1){
+								alert("deu ruim");
+								$('#errolog').show();		//Informa o erro
+							}
+						}
 					})
 					return false;	//Evita que a página seja atualizada
 				})
 			})
-
 		</script>
 	</head>
 	<body>

@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-#Wed Jun 27 23:49:58 BRT 2018
-base.0=/home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+#Wed Jun 27 22:25:46 BRT 2018
+base.0=C\:\\Users\\Aluno\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 renamed.0=classes.dex
-file.0=/home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex
-=======
-#Mon Jun 25 20:11:37 BRT 2018
-base.0=C\:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-renamed.0=classes.dex
-file.0=C\:\\EasyPHP-Devserver-17\\eds-www\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex
->>>>>>> bd0582ab9c07d5d0be86d4c75a50247bb809c317
+file.0=C\:\\Users\\Aluno\\appCombuFacil\\CombuFacil\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex

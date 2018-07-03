@@ -8,9 +8,9 @@
 		<title>WalkCut</title>
 
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" href="css/demo.css" />
+		<link rel="stylesheet" href="_css/demo.css" />
 		<link rel="stylesheet" href="./js/jquerymobile/jquery.mobile-1.4.5.min.css">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="_css/style.css">
 		<script src="./js/jquery-2.2.4.min.js"></script>
 		<script src="./js/jquerymobile/jquery.mobile-1.4.5.min.js"></script>
 		<link rel="stylesheet" href="dist/jquery.mmenu.all.css" />
@@ -47,7 +47,7 @@
 					iconbar		: {
 						add 		: true,
 						size		: 40,
-						top 		: [
+						top 		: [ 
 							'<a href=""><span class=""></span></a>'
 						],
 						bottom 		: [
@@ -72,16 +72,17 @@
 							content		: [ 'searchfield' ]
 						}, {
 							type		: 'tabs',
-							content		: [
-								'<a href="#panel-menu"><i class="fa fa-bars"></i> <span>Menu</span></a>',
+							content		: [ 
+								'<a href="#panel-menu"><i class="fa fa-bars"></i> <span>Menu</span></a>', 
 								'<a href="#panel-account"><i class="fa fa-user"></i> <span>Account</span></a>'
-
+								
 							]
 						}, {
 							content		: [ 'prev', 'breadcrumbs', 'close' ]
-						},
+						}, 
 					]
-				}, {
+				}, 
+				{
 					searchfield : {
 						clear 		: true
 					},
@@ -96,8 +97,8 @@
 					alert( 'Não tem nada' );
 					return false;
 				})
-
-
+				
+			
 			});
 				function Sair()
 			{
@@ -107,12 +108,12 @@
 			  {
 			   window.location.href = "index.html";
 			  }
-
+			
 			document.getElementById("demo").innerHTML=x;
 			}
 		</script>
-
-
+		
+			
 	</head>
 	<body>
 		<div id="page" data-role="page" data-theme="b">
@@ -120,30 +121,30 @@
 				<a href="#menu"><span></span></a>
 				WalkCut
 			</div>
-
+			
 				<div data-role="content" >
 				<h4 class="ui-bar ui-bar-a">BUSCAR POR:</h4>
 				<br>
 				<button class="ui-btn ui-shadow">Salões</button>
 				<button class="ui-btn ui-shadow">Barbeiros</button>
-
-
+				
+				
 				<!--
 					<label for="search-2">Procurar Barbeiros:</label>
 					<input type="search" name="search-2" id="search-2" value="" />
-
-
+					
+					
 					-->
 					<!--
-
+				
 					<ul data-role="listview" data-inset="true">
 							<li><a href="#">
-
+								
 							<h2>Broken Bells</h2>
 							<p>Broken Bells</p></a>
 							</li>
 							<li><a href="#">
-
+								
 							<h2>Warning</h2>
 							<p>Hot Chip</p></a>
 							</li>
@@ -152,7 +153,7 @@
 							<p>Broken Bells</p></a>
 							</li>
 							<li><a href="#">
-
+								
 							<h2>Warning</h2>
 							<p>Hot Chip</p></a>
 							</li>
@@ -161,28 +162,28 @@
 							<p>Broken Bells</p></a>
 							</li>
 							<li><a href="#">
-
+								
 							<h2>Warning</h2>
 							<p>Hot Chip</p></a>
 							</li>
 							<li><a href="#">
-
+							   
 							<h2>Wolfgang Amadeus Phoenix</h2>
 							<p>Phoenix</p></a>
 							</li>
 						</ul>
 					-->
-
-
-
+					
+					
+					
 				</div>
-
+			
 			<nav id="menu">
 				<div id="panel-menu">
 					<ul>
 						<li><a href="#/">Início</a></li>
 						<li><a href="#/">Contato</a></li>
-
+					
 					</ul>
 				</div>
 
@@ -193,11 +194,11 @@
 					</ul>
 				</div>
 
-
+				
 			</nav>
 			<div data-role="footer" class="footer" data-theme="a" data-position="fixed">
 					<h1>WalkCut</h1>
-				</div>
+				</div> 
 		</div>
 	</body>
 </html>

@@ -1,55 +1,27 @@
 -- Merging decision tree log ---
 manifest
-<<<<<<< HEAD
-ADDED from /home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/CordovaLib/AndroidManifest.xml:20:1-23:12
-INJECTED from /home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/CordovaLib/AndroidManifest.xml:20:1-23:12
-INJECTED from /home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/CordovaLib/AndroidManifest.xml:20:1-23:12
-INJECTED from /home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/CordovaLib/AndroidManifest.xml:20:1-23:12
-INJECTED from /home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/CordovaLib/AndroidManifest.xml:20:1-23:12
-INJECTED from /home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/CordovaLib/AndroidManifest.xml:20:1-23:12
-INJECTED from /home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/CordovaLib/AndroidManifest.xml:20:1-23:12
+ADDED from C:\Users\Aluno\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
+INJECTED from C:\Users\Aluno\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
+INJECTED from C:\Users\Aluno\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
+INJECTED from C:\Users\Aluno\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
+INJECTED from C:\Users\Aluno\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
+INJECTED from C:\Users\Aluno\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
+INJECTED from C:\Users\Aluno\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
 	package
-		ADDED from /home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/CordovaLib/AndroidManifest.xml:21:7-35
-		INJECTED from /home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/CordovaLib/AndroidManifest.xml
-		INJECTED from /home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/CordovaLib/AndroidManifest.xml
+		ADDED from C:\Users\Aluno\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml:21:7-35
+		INJECTED from C:\Users\Aluno\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml
+		INJECTED from C:\Users\Aluno\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml
 	android:versionName
-		ADDED from /home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/CordovaLib/AndroidManifest.xml:21:36-61
-		INJECTED from /home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/CordovaLib/AndroidManifest.xml
-		INJECTED from /home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/CordovaLib/AndroidManifest.xml
+		ADDED from C:\Users\Aluno\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml:21:36-61
+		INJECTED from C:\Users\Aluno\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml
+		INJECTED from C:\Users\Aluno\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/CordovaLib/AndroidManifest.xml:20:11-69
+		ADDED from C:\Users\Aluno\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml:20:11-69
 	android:versionCode
-		ADDED from /home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/CordovaLib/AndroidManifest.xml:21:62-85
-		INJECTED from /home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/CordovaLib/AndroidManifest.xml
-		INJECTED from /home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/CordovaLib/AndroidManifest.xml
+		ADDED from C:\Users\Aluno\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml:21:62-85
+		INJECTED from C:\Users\Aluno\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml
+		INJECTED from C:\Users\Aluno\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml
 uses-sdk
-ADDED from /home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/CordovaLib/AndroidManifest.xml:22:5-44
+ADDED from C:\Users\Aluno\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml:22:5-44
 	android:minSdkVersion
-		ADDED from /home/daniel-figueiredo/Documentos/appCombuFacil/CombuFacil/platforms/android/CordovaLib/AndroidManifest.xml:22:15-41
-=======
-ADDED from C:\EasyPHP-Devserver-17\eds-www\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
-INJECTED from C:\EasyPHP-Devserver-17\eds-www\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
-INJECTED from C:\EasyPHP-Devserver-17\eds-www\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
-INJECTED from C:\EasyPHP-Devserver-17\eds-www\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
-INJECTED from C:\EasyPHP-Devserver-17\eds-www\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
-INJECTED from C:\EasyPHP-Devserver-17\eds-www\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
-INJECTED from C:\EasyPHP-Devserver-17\eds-www\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml:20:1-23:12
-	package
-		ADDED from C:\EasyPHP-Devserver-17\eds-www\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml:21:7-35
-		INJECTED from C:\EasyPHP-Devserver-17\eds-www\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml
-		INJECTED from C:\EasyPHP-Devserver-17\eds-www\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml
-	android:versionName
-		ADDED from C:\EasyPHP-Devserver-17\eds-www\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml:21:36-61
-		INJECTED from C:\EasyPHP-Devserver-17\eds-www\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml
-		INJECTED from C:\EasyPHP-Devserver-17\eds-www\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml
-	xmlns:android
-		ADDED from C:\EasyPHP-Devserver-17\eds-www\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml:20:11-69
-	android:versionCode
-		ADDED from C:\EasyPHP-Devserver-17\eds-www\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml:21:62-85
-		INJECTED from C:\EasyPHP-Devserver-17\eds-www\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml
-		INJECTED from C:\EasyPHP-Devserver-17\eds-www\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml
-uses-sdk
-ADDED from C:\EasyPHP-Devserver-17\eds-www\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml:22:5-44
-	android:minSdkVersion
-		ADDED from C:\EasyPHP-Devserver-17\eds-www\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml:22:15-41
->>>>>>> bd0582ab9c07d5d0be86d4c75a50247bb809c317
+		ADDED from C:\Users\Aluno\appCombuFacil\CombuFacil\platforms\android\CordovaLib\AndroidManifest.xml:22:15-41
